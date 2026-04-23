@@ -11,12 +11,12 @@ session_start();
 		echo "Te ha tocado:";
 		if ($gift == "R") {
 			$Rose = array("1" => "Roja","2" => "Blanca","3" => "Rosa","4" => "Amarilla","5" => "Negra");
-			$tipo = rand(1, 5);
+			$tipo = array_rand($Rose);
 			echo "<img src='img/" . $Rose[$tipo] . ".png' alt='" . $Rose[$tipo] . "' width='200'>";
 
 		} elseif ($gift == "L") {
 			$Books = array("1" => "1","2" => "2","3" => "3","4" => "4","5" => "5");
-			$tipo = rand(1, 5);
+			$tipo = array_rand($Books);
 			echo "<img src='img/" . $Books[$tipo] . ".png' alt='" . $Books[$tipo] . "' width='200'>";
 
 		}
