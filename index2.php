@@ -9,6 +9,8 @@
 <body>
   <div class="container">
     <div id="board">
+        <h1>Sant Jordi 2026</h1>
+        <p class="subtitle">El dia de la rosa i el llibre</p>
         <form method="post" action="gift.php">
             <label for="gift">Pide un regalo:</label>
             <select name="gift" id="gift">
