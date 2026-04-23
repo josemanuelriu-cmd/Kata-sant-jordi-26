@@ -1,5 +1,5 @@
 <?php
-
+//array indexado para las rosas y los libros
 $Rose = array("1" => "Roja","2" => "Blanca","3" => "rosa","4" => "Amarilla","5" => "Negra");
 $Books = array("1" => "Git flow para tontos","2" => "Aprende a programar BIEN","3" => "Para que narices sirve TDD","4" => "Que es un hook en react","5" => "Aprende a hacer readme en tus proyectos");
 
