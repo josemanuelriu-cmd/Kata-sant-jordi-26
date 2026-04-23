@@ -7,7 +7,7 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Tu regalo - Sant Jordi 2026</title>
+  <title>El teu regal - Sant Jordi 2026</title>
 </head>
 <body>
   <div class="container">
@@ -17,11 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gift = $_POST['gift'];
 
     if (empty($gift)) {
-        echo "<p class='result-text'>No has seleccionado ningún regalo.</p>";
+        echo "<p class='result-text'>No has seleccionat cap regal.</p>";
     } else {
-        $giftName = ($gift == "R") ? "Rosa" : "Libro";
-        echo "<p class='result-text'>Has pedido: <strong>" . htmlspecialchars($giftName) . "</strong></p>";
-        echo "<p class='gift-reveal'>Te ha tocado:</p>";
+        $giftName = ($gift == "R") ? "Rosa" : "Llibre";
+        echo "<p class='result-text'>Has demanat: <strong>" . htmlspecialchars($giftName) . "</strong></p>";
+        echo "<p class='gift-reveal'>T'ha tocat:</p>";
 
         if ($gift == "R") {
             $Rose = ["1" => "Roja", "2" => "Blanca", "3" => "Rosa", "4" => "Amarilla", "5" => "Negra"];
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-      <a class="back-link" href="index2.php">Pedir otro regalo</a>
+      <a class="back-link" href="index2.php">Demani un altre regal</a>
     </div>
   </div>
 </body>
